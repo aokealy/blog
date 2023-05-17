@@ -33,6 +33,8 @@ class PostDetail(View):
                 "comment_form": CommentForm()
             },
         )
+        
+   
     
     def post(self, request, slug, *args, **kwargs):
 
@@ -74,4 +76,20 @@ class PostLike(View):
         else:
             post.likes.add(request.user)
 
-        return HttpResponseRedirect(reverse('post_detail', args=[slug]))        
+        return HttpResponseRedirect(reverse('post_detail', args=[slug])) 
+
+
+
+def add_post(request):
+    return render(request, 'blog/add_post.html')
+
+
+
+
+
+
+
+
+
+
+      
