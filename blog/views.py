@@ -33,6 +33,7 @@ class PostDetail(View):
                 "comment_form": CommentForm()
             },
         )
+
         
    
     
@@ -80,8 +81,13 @@ class PostLike(View):
 
 
 
-def add_post(request):
-    return render(request, 'blog/add_post.html')
+
+
+
+
+
+
+
 
 
 
