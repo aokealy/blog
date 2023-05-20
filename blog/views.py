@@ -12,6 +12,16 @@ class PostList(generic.ListView):
     template_name = "index.html"
     paginate_by = 6
 
+class PostCreateView(generic.CreateView):
+    model = Post
+    fields = ['author','title', 'description']
+ 
+    
+    
+
+
+
+
 
 class PostDetail(View):
 
