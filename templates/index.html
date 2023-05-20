@@ -31,6 +31,7 @@
                             <p class="card-text text-muted h6">{{ post.created_on}} <i class="fa-solid fa-thumbs-up"></i>
                                 {{ post.number_of_likes }}</p>
                         </div>
+                        <a href="{% url 'post_form' %}">Create Post</a>
                     </div>
                 </div>
                 {% if forloop.counter|divisibleby:3 %}
